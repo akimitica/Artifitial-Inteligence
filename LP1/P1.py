@@ -1,26 +1,29 @@
-def parni(lista):
+##1.a
+
+def parni(arg):
     i=0
-    for x in lista:
+    for x in arg:
         if x % 2 == 0:
             i=i+1
     print(i)
+    return i
 
 
-def poredak(lista1,lista2):
+
+##1.b
+
+def poredak(arg1, arg2):
     
-    if lista1.size()!=lista2.size():
-        print(printlista)
-    else:
-        list3.append(lista1.pop)
-        list3.append(lista2.pop)
-        if list3[0]>list3[1]:
-            list3.append('Nije')
-        else:
-            list3.append('Jeste')
-        printlista.append(list3)
-        poredak(lista1,lista2)
+    kraca = arg1 if len(arg1) < len(arg2) else arg2
+    kraca.extend([0] * abs(len(arg1) - len(arg2)))
+    list3 = map(lambda x, y: (x, y, 'Jeste' if y == 2 * x else 'Nije'), arg1, arg2)
+    print(list(list3))
+    return list(list3)
 
+    
 
+list1=[1,2,3,4,8]
+list2=[2,4,1,5,3]
 
-lista=[1,2,3,4,5,6,8]
-parni(lista)
+##parni(list1)
+poredak(list1,list2)
