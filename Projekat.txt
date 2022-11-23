@@ -1,0 +1,23 @@
+Datum objavljivanja projekta - 14.11.2022
+Rok za predaju - 10.01.2023
+
+Cilj:
+    -Formulacija problema
+    -implementacija algoritma za trazenje
+    -implementacija procene stanja 
+
+Igra - Domineering:
+
+
+
+Prva faza:
+    Otvaranje 
+        -Transpoziciona baza otvaranja,
+        -Duzina trajanja - ???
+    Igra
+        -Primenjuje algoritam,
+            -Broj uzastopno slobodnih mesta?,
+            -Broj slobodnih mesta,
+            -Ko je na potezu,
+            -AlphaBeta, NullMove,ex
+    Zatvaranje

@@ -43,7 +43,7 @@ def breadth_first_search(graph, start, end):
     """
 
     while (not found_dest) and (not queue_nodes.empty()):
-        node = queue.nodes.get()
+        node = queue_nodes.get()
         process(node)
         for dest in graph[node]:
            if dest not in visited:
