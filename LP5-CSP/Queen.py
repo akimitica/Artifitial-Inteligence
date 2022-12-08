@@ -4,8 +4,8 @@ heuristikom za raspoređivanje kraljica na šahovskoj tabli
 dimenzije 8x8 tako da se ne napadaju."""
 
 def NQueen(n: int):
+    
     solved = False
-
     initialState={
         'assigned': {},
         'nonAssignedAndDomains': { i:[j for j in range(1, n + 1)] for i in range(1, n + 1)}
@@ -62,9 +62,9 @@ def NQueen(n: int):
             pos = finalState['assigned'][i]
             for j in range(1, n + 1):
                 if j!=pos:
-                    str+='0'
+                    str+='0 '
                 else:
-                    str+='1'
+                    str+='1 '
             print(str)
 
 
